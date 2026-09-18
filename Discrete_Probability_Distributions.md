@@ -52,7 +52,9 @@ The Bernoulli distribution is named after **Jacob Bernoulli** (1655–1705), a S
 While tossing a coin, we are dealing with two possible outcomes: '*Head (H)*' and '*Tail (T)*'.
 If *X = 1 --> H* and *X = 0 --> T* then *P(X = 1) = p* and *P(X = 0) = 1 - p*.
 
-Then the *PMF* becomes *$$P (X = x) = p^x(1−p)^{1−x}$$*
+Then the *PMF* becomes 
+
+*P (X = x) = p^x(1−p)^{1−x}*
 
 ,x∈{0,1}
 
@@ -127,7 +129,9 @@ Mean: $$E[X] = np$$
 
 Variance: $$Var(X)=np(1-p)$$
 
-Here the important thing to mention is the events performed should be independent of each other. Suppose if *$$X=X1​+X2​$$*
+Here the important thing to mention is the events performed should be independent of each other. Suppose if 
+
+*X = X1​+X2​*
 
 The general formula is:
 
@@ -160,19 +164,7 @@ $$ { P(X_1=x_1,\ldots,X_k=x_k) = \frac{n!}{x_1!x_2!\cdots x_k!} p_1^{x_1}p_2^{x_
 
 where
 
-$$x
-1
-	​
-
-+x
-2
-	​
-
-+⋯+x
-k
-	​
-
-=n.$$
+$$x1+x2+⋯+xk=n$$
 
 The counts across all categories must add up to the total number of trials and 
 
@@ -225,9 +217,16 @@ $$ \boxed{\text{smaller }p\Rightarrow\text{longer waiting time}} $$
 
 Variance:
 
+
 ![](other_images/geometric1.png)
+
+
 ![](other_images/geometric2.png)
+
+
 ![](other_images/geometric3.png)
+
+
 
 Hence, finally we got:
 $$Var(X)=\frac{1-p}{p^2}$$
@@ -330,6 +329,8 @@ Let's see how it came part by part:
 ![](other_images/poisson_mean.png)
 
 ![](other_images/poisson_variance1.png)
+
+
 ![](other_images/poisson_variance2.png)
 -----
 
@@ -530,6 +531,7 @@ PMF is:
 
 $$ { P(X_1=x_1,X_2=x_2,X_3=x_3) = \frac{n!}{x_1!x_2!x_3!} p_1^{x_1}p_2^{x_2}p_3^{x_3} } $$
 
+
 $$ { P(X_1=5,X_2=3,X_3=2) = \frac{10!}{5!3!2!} (0.5)^{5}(0.3)^{3}(0.2)^{2} } $$
 
 $$\frac{10!}{5!3!2!} = 2520$$
@@ -553,21 +555,21 @@ $$ E[X_3]=10(0.2)={2} $$
 
 The variance of each category is:
 
-$$ \operatorname{Var}(X_i)=np_i(1-p_i) $$
+$$ \text{Var}(X_i)=np_i(1-p_i) $$
 
 So:
 
 Cash:
 
-$$ \operatorname{Var}(X_1)=10(0.5)(0.5)={2.5} $$
+$$ \text{Var}(X_1)=10(0.5)(0.5)={2.5} $$
 
 Card:
 
-$$ \operatorname{Var}(X_2)=10(0.3)(0.7)={2.1} $$
+$$ \text{Var}(X_2)=10(0.3)(0.7)={2.1} $$
 
 UPI:
 
-$$ \operatorname{Var}(X_3)=10(0.2)(0.8)={1.6} $$
+$$ \text{Var}(X_3)=10(0.2)(0.8)={1.6} $$
 
 
 ```
@@ -634,10 +636,16 @@ $$ P(X=k)=(1-p)^{k-1}p $$
 For \(k=4\):
 
 $$ P(X=4)=(1-0.4)^3(0.4) $$ $$ =(0.6)^3(0.4) $$ $$ {P(X=4)=0.0864} $$
+
+
 Mean
 $$ E[X]=\frac{1}{p} $$ $$ E[X]=\frac{1}{0.4} $$ $$ {E[X]=2.5} $$
+
+
 Variance
-$$ \operatorname{Var}(X)=\frac{1-p}{p^2} $$ $$ =\frac{0.6}{0.4^2} $$
+$$ \text{Var}(X)=\frac{1-p}{p^2} $$ $$ =\frac{0.6}{0.4^2} $$
+
+
 $$Var(X)=3.75$$
 
 ```
@@ -700,8 +708,10 @@ Mean :
 For the version where \(X\) represents the number of trials until the \(r\)-th success:
 
 $$ E[X]=\frac{r}{p} $$ $$ E[X]=\frac{3}{0.3} $$ $$ {E[X]=10} $$
+
+
 Variance
-$$ \operatorname{Var}(X) = \frac{r(1-p)}{p^2} $$ $$ = \frac{3(0.7)}{0.3^2} $$
+$$ \text{Var}(X) = \frac{r(1-p)}{p^2} $$ $$ = \frac{3(0.7)}{0.3^2} $$
 $$Var(X)=23.3333$$
 	
 ```
@@ -822,7 +832,7 @@ Variance:
 
 For Poisson:
 
-$$ \operatorname{Var}(X)=\lambda $$
+$$ \text{Var}(X)=\lambda $$
 
 Therefore:
 
