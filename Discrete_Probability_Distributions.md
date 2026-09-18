@@ -258,7 +258,7 @@ For this, the \(k\)-th position should have the \(r\)-th success, and the first 
 
 Which gives us $$p^r(1−p)^{k−r}$$
 
-But this is not yet the PMF. The trials before the final success can be arranged in different ways, which is why we need the combination term:  $$ \binom {k-1}{r-1} $$  Combining all gives us the PMF of Negative Binomial Distribution i.e
+But this is not yet the PMF. The trials before the final success can be arranged in different ways, which is why we need the combination term:  $$\binom {k-1}{r-1}$$  Combining all gives us the PMF of Negative Binomial Distribution i.e
     $$P(X=k)= \binom {k-1}{r-1} p^r
 (1−p)^{k−r}$$
 
